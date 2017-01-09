@@ -1,0 +1,4 @@
+<ul>
+  <li *ngFor="let user of users" (click)="onSelect(user)" [class.clicked]="selectedUser===user">{{user.firstName}} {{user.lastName}}</li>
+</ul>
+<user [user]="selectedUser"></user>
